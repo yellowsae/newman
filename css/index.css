@@ -1,0 +1,61 @@
+.welcome {
+    margin: 55px auto 120px;
+    width: 1200px;
+}
+
+.welcome>p {
+    /* width: 1200px; */
+    font-size: 13px;
+    padding: 0 80px;
+    line-height: 24px;
+    text-align: center;
+}
+
+
+/* 四组图片样式 */
+
+.welcome .classic {
+    width: 1200px;
+    /* 弹性布局 */
+    display: flex;
+    /* 与上边元素拉开距离 */
+    margin-top: 105px;
+    /*  */
+    padding: 0 15px;
+    /* justify-content: space-around: 所有子元素等分空白区域 （重要）
+        弹性布局*/
+    justify-content: space-around;
+}
+
+.welcome .classic li {
+    /* 所有的li ， 所占的宽度 227px*/
+    flex: 0 0 227px;
+    text-align: center;
+}
+
+
+/* 设置classic 中的字体 */
+
+.welcome .classic h3 {
+    font-size: 20px;
+    color: #333;
+    /* 单词全部大写 */
+    text-transform: uppercase;
+    /* h3 的上边距 */
+    margin-top: 44px;
+    font-weight: 900px;
+}
+
+.welcome .classic h4 {
+    font-size: 14px;
+    color: #666;
+    /* 盒子下边距 */
+    margin-bottom: 29px;
+    font-weight: 800;
+}
+
+.welcome .classic p {
+    font-size: 12px;
+    color: #999;
+    line-height: 24px;
+}

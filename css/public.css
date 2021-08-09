@@ -1,0 +1,210 @@
+/*  公共样式的CSS文件 */
+
+
+/* 因为所有的样式都具有相同的导航栏，写在 public 公共的样式 */
+
+header {
+    width: 1200px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+header .logo {
+    width: 140px;
+    height: 40px;
+    /* 200px logo左边的距离 */
+    margin: 20px 200px 0 0;
+    float: left;
+}
+
+
+/* nav 部分 */
+
+.header .nav {
+    float: left;
+    /* 清除nav里边的浮动 */
+    overflow: hidden;
+}
+
+header .nav li {
+    float: left;
+    /* width: 125px; */
+    margin-right: 56px;
+    font-size: 16px;
+}
+
+
+/* 添加下划线*/
+
+header .nav li:first-child,
+header .nav li:hover {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #01a1ff;
+}
+
+
+/*  a标签字体的颜色*/
+
+header .nav li a {
+    color: #333333;
+}
+
+
+/* 默认active 被点击, a的字体颜色 */
+
+header .nav li .active {
+    color: #01a1ff;
+}
+
+header .nav li:hover a {
+    color: #01a1ff;
+}
+
+
+/* language 部分 */
+
+header .language {
+    float: right;
+    overflow: hidden;
+}
+
+header .language li {
+    float: left;
+    width: 47px;
+    height: 50px;
+    /*  边框透明 */
+    border: 1px solid transparent;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header .language li:first-child {
+    border: 1px solid #ccc;
+}
+
+header .language li:hover {
+    border: 1px solid #ccc;
+}
+
+
+/* banner 部分 */
+
+.banner {
+    width: 100%;
+    height: 400px;
+    /* 给出定位 */
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 轮播图部分 */
+
+.banner .imgs {
+    /* 多张图的宽度 */
+    width: 1000%;
+    position: absolute;
+}
+
+.banner li {
+    float: left;
+}
+
+.banner img {
+    /* 图片大小 */
+    width: 100%;
+    height: 400px;
+    cursor: default;
+}
+
+
+/* 控制器 */
+
+.banner .prev,
+.banner .next {
+    position: absolute;
+    top: 184px;
+    width: 32px;
+    height: 32px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.banner .prev {
+    background: url("../home/image/index-xb2.png") no-repeat;
+    left: 40px;
+}
+
+.banner .prev:hover {
+    background: url("../home/image/index-xb4.png") no-repeat;
+    left: 40px;
+}
+
+.banner .next {
+    background: url("../home/image/index-xb1.png") no-repeat;
+    right: 40px;
+}
+
+.banner .next:hover {
+    background: url("../home/image/index-xb3.png") no-repeat;
+    right: 40px;
+}
+
+
+/* 计数器 */
+
+.banner .count {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    margin-left: -22.5px;
+}
+
+.banner .count li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    opacity: .4;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .count .on {
+    background-color: #01a1ff;
+    opacity: 1;
+}
+
+
+/*  title 部分 */
+
+.title {
+    font-size: 34px;
+    font-family: 'Franklin Gothic Medium';
+    /* 字母全部大写 */
+    text-transform: uppercase;
+    text-align: center;
+    /* 定位 */
+    position: relative;
+    margin-bottom: 44px;
+}
+
+.title:after {
+    /* 设置 title 下边的下划线 */
+    content: '';
+    display: block;
+    width: 42px;
+    border-bottom: 4px solid #01a1ff;
+    position: absolute;
+    left: 50%;
+    margin-left: -21px;
+    bottom: -3px;
+}
