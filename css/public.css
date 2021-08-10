@@ -125,8 +125,8 @@ header .language li:hover {
 
 /* 控制器 */
 
-.banner .prev,
-.banner .next {
+.prev,
+.next {
     position: absolute;
     top: 184px;
     width: 32px;
@@ -135,22 +135,22 @@ header .language li:hover {
     cursor: pointer;
 }
 
-.banner .prev {
+.prev {
     background: url("../home/image/index-xb2.png") no-repeat;
     left: 40px;
 }
 
-.banner .prev:hover {
+.prev:hover {
     background: url("../home/image/index-xb4.png") no-repeat;
     left: 40px;
 }
 
-.banner .next {
+.next {
     background: url("../home/image/index-xb1.png") no-repeat;
     right: 40px;
 }
 
-.banner .next:hover {
+.next:hover {
     background: url("../home/image/index-xb3.png") no-repeat;
     right: 40px;
 }
@@ -207,4 +207,16 @@ header .language li:hover {
     left: 50%;
     margin-left: -21px;
     bottom: -3px;
+}
+
+
+/* 首页 p 标签 */
+
+.index-p {
+    width: 1200px;
+    font-family: 微软雅黑;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
 }

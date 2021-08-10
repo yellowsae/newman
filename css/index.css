@@ -3,14 +3,6 @@
     width: 1200px;
 }
 
-.welcome>p {
-    /* width: 1200px; */
-    font-size: 13px;
-    padding: 0 80px;
-    line-height: 24px;
-    text-align: center;
-}
-
 
 /* 四组图片样式 */
 
@@ -58,4 +50,367 @@
     font-size: 12px;
     color: #999;
     line-height: 24px;
+}
+
+
+/* 处理第二栏的轮播图 */
+
+.pro-center {
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.pro-center .pro-list {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.pro-center .pro-list li {
+    float: left;
+    position: relative;
+    width: 16.666%;
+    border: 0px solid transparent;
+    /* box-sizing: border-box; 盒子所有的宽度 */
+    box-sizing: border-box;
+    /* padding */
+}
+
+.pro-center .pro-list li img {
+    /* img 宽度 */
+    width: 100%;
+    cursor: default;
+}
+
+.pro-center .pro-list li:hover .pro-title {
+    background-color: #01a1ff;
+    color: #fff;
+}
+
+.pro-center .pro-list li:hover .pro-title .add {
+    background-color: #fff;
+    color: #01a1ff;
+}
+
+.pro-center .pro-title {
+    /* 图片下的文字 */
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-color: #e5e5e5;
+    line-height: 50px;
+    font-size: 14px;
+    color: #333;
+    position: relative;
+    margin-top: -2px;
+}
+
+.pro-center .pro-title span:first-child {
+    padding-left: 20px;
+}
+
+.pro-center .pro-title .add {
+    /* + 号 */
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    display: block;
+    background-color: #999999;
+    border-radius: 50%;
+    top: 17.5px;
+    right: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+/*  轮播图按钮，选自公共样式 public.css ,然后通过定位*/
+
+.pro-center .prev,
+.pro-center .next {
+    position: absolute;
+}
+
+.pro-center .prev {
+    top: 270px;
+    left: 270px;
+}
+
+.pro-center .next {
+    top: 270px;
+    right: 270px;
+}
+
+
+/* news 新闻中心  */
+
+.news-center {
+    width: 1200px;
+    margin: 0 auto 120px;
+}
+
+.news-show {
+    margin-top: 50px;
+    overflow: hidden;
+    /* 定位 */
+    position: relative;
+}
+
+.news-show .news-left {
+    float: left;
+}
+
+.news-show .news-left img {
+    width: 553px;
+}
+
+.news-show .news-left p {
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 37px;
+    width: 553px;
+    line-height: 37px;
+    position: absolute;
+    background-color: #01a1ff;
+    color: #fff;
+    bottom: 11px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+
+/* 图片下的下划线 */
+
+.news-show .news-left li {
+    float: left;
+    width: 92px;
+    height: 7px;
+    background-color: #fff;
+    margin-top: 4px;
+}
+
+.news-show .news-left li.news-active {
+    background-color: #01a1ff;
+}
+
+
+/* new-right  */
+
+.news-center .news-show .news-right {
+    /* 总的宽度 */
+    width: 605px;
+    float: right;
+}
+
+.news-right .news-dateil {
+    /* 清除浮动 */
+    overflow: hidden;
+}
+
+.news-right .news-dateil .news-date {
+    /* 左浮动 */
+    float: left;
+    width: 70px;
+    height: 77px;
+    border: 2px solid #01a1ff;
+    display: block;
+    margin-right: 10px;
+}
+
+.news-right .news-dateil .news-date span:first-child {
+    font: 40px Tahoma;
+    display: block;
+    line-height: 57px;
+    text-align: center;
+    height: 57px;
+    color: #01a1ff;
+}
+
+.news-right .news-dateil .news-date span:last-child {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font: 14px Tahoma;
+    background-color: #01a1ff;
+}
+
+.news-right .news-dateil .news-content {
+    float: right;
+    width: 520px;
+    /* 排在一行上 */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.news-right .news-dateil .news-content .h2 {
+    color: #01a1ff;
+    font-size: 18px;
+    margin: 10px 0 15px;
+    display: block;
+    font-weight: 900;
+}
+
+.news-right .news-dateil .news-content .p {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+    display: block;
+}
+
+
+/* .news-right  --list  */
+
+.news-right .news-list {
+    /* 没有给到 a 标签 */
+    font-size: 14px;
+    color: #666;
+}
+
+.news-right .news-list li {
+    padding: 13px 0 10px;
+    border-top: 1px dotted #ccc;
+}
+
+.news-right .news-list li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-right .news-list li:last-child {
+    border-bottom: 1px dotted #ccc;
+}
+
+.news-right .news-list li i {
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.news-right .news-list li small {
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+}
+
+
+/*  video 部分 */
+
+.video-center {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video-list {
+    /* 上边距 */
+    margin-top: 54px;
+    overflow: hidden;
+}
+
+.video-list li img {
+    /* 设置图片大小 */
+    width: 260px;
+    height: 195px;
+    display: block;
+}
+
+.video-list li {
+    float: left;
+    width: 252px;
+    margin-right: 53px;
+    text-align: center;
+    /* 定位,为play的video键  */
+    position: relative;
+    /* li 标签清除浮动， 清除多出的部分 */
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+
+.video-center li:last-child {
+    /* 最后一个没有缩进 */
+    margin-right: 0;
+}
+
+
+/* 增加视频的按钮 */
+
+.video-list .play {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .5);
+    /* 圆角 */
+    border-radius: 50%;
+    position: absolute;
+    left: 104px;
+    top: 75px;
+}
+
+
+/* 设置 video 的三角 */
+
+.video-list .play:after {
+    content: '';
+    display: block;
+    /* 15个像素的透明边框 */
+    border: 15px solid transparent;
+    border-left-color: #fff;
+    position: absolute;
+    left: 18px;
+    top: 8px;
+}
+
+.video-list .video-title {
+    margin: 25px 0 10px;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+.video-list .video-desc {
+    font-size: 12px;
+    color: #999;
+}
+
+.video-list li:hover {
+    /* 边框阴影 */
+    box-shadow: 3px 3px 3px #01a1ff, -3px -3px 3px #01a1ff;
+}
+
+.video-list li:hover .video-title {
+    color: #01a1ff;
+}
+
+
+/*  视频键 hover 显示突出效果 */
+
+.video-list li:hover .play {
+    /* video 加上视频键 */
+    width: 54px;
+    height: 54px;
+    border: 3px solid #01a1ff;
+    background-color: rgba(255, 255, 255, .5);
+    left: 100px;
+    top: 73px;
+}
+
+.video-list li:hover .play:after {
+    border-left-color: #01a1ff;
+    left: 21px;
+    top: 11px;
+}
+
+.video-center .prev {
+    left: -50px;
+    top: 270px;
+}
+
+.video-center .next {
+    right: -22px;
+    top: 270px;
 }
