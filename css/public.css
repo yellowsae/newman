@@ -39,7 +39,7 @@ header .nav li {
 
 /* 添加下划线*/
 
-header .nav li:first-child,
+.nav-active,
 header .nav li:hover {
     content: '';
     display: block;
@@ -219,4 +219,325 @@ header .language li:hover {
     line-height: 24px;
     text-align: center;
     margin: 0 auto;
+}
+
+
+/* 公共样式侧边栏  */
+
+aside {
+    width: 200px;
+    /* 左浮动 */
+    float: left;
+    margin-right: 45px;
+    border: 1px solid #01a1ff;
+}
+
+aside .aside-title {
+    /* 蓝色边框 */
+    padding: 30px 0 24px;
+    background-color: #01a1ff;
+    text-align: center;
+    color: #fff;
+}
+
+aside .aside-title .title {
+    /* 盒子下边距 */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+aside .aside-title p {
+    font-size: 14px;
+}
+
+aside .aside-title .title:after {
+    border-color: #fff;
+}
+
+
+/* about-title 侧边 nav  */
+
+aside .aside-nav {
+    padding: 9px 14px 9px;
+    font-size: 18px;
+}
+
+aside .aside-nav li {
+    width: 172px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 20px;
+}
+
+aside .aside-nav li:last-child {
+    margin-bottom: 0;
+}
+
+aside .aside-nav li:hover {
+    background-color: #01a1ff;
+    border-radius: 15px;
+}
+
+aside .aside-nav li:hover a {
+    color: #fff;
+}
+
+aside .aside-nav li a {
+    color: #666;
+}
+
+aside .aside-nav li i {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+aside .aside-nav .aside-active {
+    /* active  */
+    background-color: #01a1ff;
+    border-radius: 15px;
+}
+
+.aside-active a {
+    color: #fff !important;
+}
+
+.aside {
+    float: left;
+}
+
+.aside aside {
+    /* 清除浮动 */
+    clear: both;
+}
+
+.aside aside:first-child {
+    margin-bottom: 40px;
+}
+
+
+/* 产品 search 框 */
+
+.aside .search {
+    position: relative;
+    overflow: hidden;
+}
+
+.aside .search input {
+    width: 137px;
+    height: 36px;
+    display: block;
+    margin: 9px 13px;
+    padding: 0 25px 0 10px;
+    color: #333333;
+    border: 1px solid #01a1ff;
+}
+
+.aside .search span {
+    color: #01a1ff;
+    position: absolute;
+    right: 16px;
+    top: 23px;
+}
+
+
+/* content-title 右边栏 公共样式部分  标题描述 */
+
+.content-title {
+    padding: 0 18px 10px 0;
+    border-bottom: 1px solid #d3d3d3;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-title h3 {
+    float: left;
+    margin-left: 20px;
+    padding: 8px;
+    font-size: 28px;
+    color: #333;
+    border-left: 3px solid #01a1ff;
+}
+
+.content-title h3 span {
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.content-title .crumbs-nav {
+    float: right;
+    color: #999;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    bottom: 17px;
+}
+
+.content-title .crumbs-nav a {
+    color: #999;
+}
+
+.content-title .crumbs-nav span {
+    color: #01a1ff;
+}
+
+
+/*  footer 部分 */
+
+footer {
+    width: 100%;
+    background-color: #01a1ff;
+}
+
+.footer {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer-content {
+    /* 版心宽度 */
+    width: 1200px;
+    /* 盒子居中 */
+    margin: 0 auto;
+    /* 上下距离 */
+    padding: 50px 0;
+    /* 清除浮动 */
+    overflow: hidden;
+}
+
+.footer .footer-nav {
+    float: left;
+}
+
+.footer .footer-nav dl {
+    /* dl 下的浮动 */
+    float: left;
+    /* 往左偏移 100px 拉开距离 */
+    margin-right: 100px;
+}
+
+.footer .footer-nav dl:last-child {
+    /* 去除最后一组没有偏移 */
+    margin-right: 0;
+}
+
+.footer .footer-nav dl dt {
+    /* 列表标题 */
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer .footer-nav dl dd {
+    font-size: 12px;
+    /* 列表元素边距 */
+    padding-top: 20px;
+}
+
+
+/* 右边表单 */
+
+.footer .footer-concat {
+    float: right;
+}
+
+.footer .footer-concat input {
+    width: 134px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #01a1ff;
+    color: #fff;
+    padding: 0 5px;
+}
+
+.footer .footer-concat textarea {
+    /* display: block; */
+    width: 302px;
+    height: 95px;
+    outline: none;
+    border: 1px solid #fff;
+    background-color: #01a1ff;
+    color: #fff;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.footer .footer-concat input:first-child {
+    margin-right: 17px;
+}
+
+.footer .footer-concat input::placeholder,
+.footer .footer-concat textarea::placeholder {
+    /* 修改表单字体颜色 */
+    color: #fff;
+}
+
+.footer .footer-concat input[type=button] {
+    width: 110px;
+    height: 30px;
+}
+
+footer .copyright {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+/*banner*/
+
+.banner img.banner-img {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*container*/
+
+
+/*  news 新闻部分  */
+
+.container {
+    width: 1218px;
+    margin: 60px auto 90px;
+    overflow: hidden;
+}
+
+.container-content {
+    width: 953px;
+    float: left;
+}
+
+.pages {
+    position: relative;
+    left: 287px;
+}
+
+.pages li {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    background-color: #e5e5e5;
+    text-align: center;
+    color: #999999;
+}
+
+.pages li:nth-child(2),
+.pages li:hover {
+    background-color: #01a1ff;
+    color: #fff;
+}
+
+.pages li:first-child,
+.pages li:last-child {
+    width: 92px;
 }

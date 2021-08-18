@@ -1,0 +1,28 @@
+.about-container {
+    width: 1200px;
+    margin: 60px auto 90px;
+    overflow: hidden;
+}
+
+
+/* 关于我们的文本样式  */
+
+.about-container article {
+    padding: 40px 20px 0;
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+
+.about-container article img {
+    float: left;
+    margin-right: 32px;
+}
+
+.about-container article p {
+    /* 段落空两格  */
+    text-indent: 2em;
+    /* 行距 */
+    line-height: 24px;
+    margin-bottom: 30px;
+}
